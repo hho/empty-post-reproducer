@@ -1,0 +1,9 @@
+spring:
+  cloud:
+    gateway:
+      routes:
+      - id: wiremock
+        uri: http://localhost:9090
+        predicates:
+        - Path=/testit
+        - Header=X-TEST, .*
