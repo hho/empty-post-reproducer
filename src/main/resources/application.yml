@@ -7,3 +7,7 @@ spring:
         predicates:
         - Path=/testit
         - Header=X-TEST, .*
+  reactor:
+    stacktrace-mode:
+      enabled: true
+
